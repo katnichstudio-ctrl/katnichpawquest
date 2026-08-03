@@ -70,7 +70,7 @@ export default function Home() {
             <h1 className="text-4xl font-bold leading-tight text-brand-navy sm:text-6xl sm:leading-tight">
               เลี้ยงน้องให้ปัง
               <br />
-              <span className="rounded bg-brand-gold px-2 text-brand-navy">
+              <span className="rounded bg-brand-terracotta px-2 text-white">
                 ด้วยภารกิจสนุกทุกวัน
               </span>
             </h1>
