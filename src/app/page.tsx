@@ -74,7 +74,7 @@ export default function Home() {
 
           <div className="relative mx-auto flex max-w-3xl flex-col items-start gap-6">
             <span className="rounded-full border border-brand-terracotta/40 bg-brand-terracotta/10 px-4 py-1.5 text-sm font-medium text-brand-terracotta">
-              🎮 Pet Care, Gamified
+              🎮 GameTraining
             </span>
 
             <h1 className="text-4xl font-bold leading-tight text-brand-terracotta sm:text-6xl sm:leading-tight">
@@ -89,7 +89,7 @@ export default function Home() {
             </p>
 
             <p className="text-sm text-brand-navy/60">
-              🐾 สำหรับทาสหมาทาสแมวทุกบ้าน — เริ่มเล่นได้ฟรี
+              🐾 สำหรับสุนัขทุกสายพันธุ์ ทุกช่วงวัย
             </p>
 
             <div className="mt-4 flex flex-col gap-4 sm:flex-row">
