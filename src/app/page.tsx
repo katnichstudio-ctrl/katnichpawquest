@@ -50,6 +50,18 @@ function YoutubeIcon() {
   );
 }
 
+const serviceZones = [
+  { province: "จังหวัดนครปฐม", districts: [] },
+  {
+    province: "จังหวัดนนทบุรี",
+    districts: ["บางบัวทอง", "บางกรวย", "บางใหญ่", "ไทรน้อย"],
+  },
+  {
+    province: "กรุงเทพฯ (ฝั่งธนบุรี)",
+    districts: ["ตลิ่งชัน", "ทวีวัฒนา", "บางแค", "หนองแขม"],
+  },
+];
+
 const socials = [
   {
     label: "Facebook",
@@ -288,12 +300,30 @@ export default function Home() {
           />
 
           <h2 className="mt-8 text-2xl font-bold text-white sm:text-3xl">
-            พร้อมเริ่มภารกิจกับน้องแล้วหรือยัง?
+            พร้อมเริ่มภารกิจกันรึยัง?
           </h2>
 
           <p className="mt-3 text-white/70">
-            ทักมาปรึกษาได้เลย ไม่มีค่าใช้จ่าย
+            บริการฝึกสุนัขที่บ้าน ฝากฝึก และเรียนออนไลน์
           </p>
+
+          <div className="mt-6 flex flex-col items-center gap-1">
+            <p className="font-semibold text-white">📍 ให้บริการโซน</p>
+            {serviceZones.map((z) => (
+              <p key={z.province} className="text-white/70">
+                {z.province}
+                {z.districts.length > 0 && (
+                  <span className="text-white/50">
+                    {" "}
+                    — {z.districts.join(" · ")}
+                  </span>
+                )}
+              </p>
+            ))}
+            <p className="mt-2 text-sm text-white/50">
+              พื้นที่อื่นสอบถามเพิ่มเติม
+            </p>
+          </div>
 
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
