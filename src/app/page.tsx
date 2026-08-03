@@ -51,16 +51,31 @@ function YoutubeIcon() {
 }
 
 const serviceZones = [
-  { province: "จังหวัดนครปฐม", districts: [] },
-  {
-    province: "จังหวัดนนทบุรี",
-    districts: ["บางบัวทอง", "บางกรวย", "บางใหญ่", "ไทรน้อย"],
-  },
   {
     province: "กรุงเทพฯ (ฝั่งธนบุรี)",
     districts: ["ตลิ่งชัน", "ทวีวัฒนา", "บางแค", "หนองแขม"],
   },
+  {
+    province: "จังหวัดนนทบุรี",
+    districts: ["บางบัวทอง", "บางกรวย", "บางใหญ่", "ไทรน้อย"],
+  },
+  { province: "จังหวัดนครปฐม", districts: [] },
 ];
+
+function LocationPinIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      className="h-6 w-6 shrink-0"
+    >
+      <path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z" />
+      <circle cx="12" cy="9" r="2.5" />
+    </svg>
+  );
+}
 
 const socials = [
   {
@@ -305,28 +320,30 @@ export default function Home() {
           บริการฝึกสุนัขที่บ้าน ฝากฝึก และเรียนออนไลน์
         </p>
 
-        <div className="mt-6 flex flex-col items-center gap-1">
-          <p className="font-semibold text-white">📍 ให้บริการโซน</p>
+        <div className="mx-auto mt-8 flex max-w-sm flex-col items-start gap-5 text-left">
+          <p className="text-lg font-bold text-white">เขตบริการ</p>
+
           {serviceZones.map((z) => (
-            <p key={z.province} className="text-white/70">
-              {z.province}
-              {z.districts.length > 0 && (
-                <span className="text-white/50">
-                  {" "}
-                  — {z.districts.join(" · ")}
-                </span>
-              )}
-            </p>
+            <div key={z.province} className="flex items-start gap-3">
+              <span className="mt-0.5 text-brand-gold">
+                <LocationPinIcon />
+              </span>
+              <div>
+                <p className="font-bold text-white">{z.province}</p>
+                {z.districts.length > 0 && (
+                  <p className="text-white/60">{z.districts.join(" · ")}</p>
+                )}
+              </div>
+            </div>
           ))}
-          <p className="mt-2 text-sm text-white/50">
-            พื้นที่อื่นสอบถามเพิ่มเติม
-          </p>
+
+          <p className="text-sm text-white/50">พื้นที่อื่นสอบถามเพิ่มเติม</p>
 
           <a
             href="https://maps.app.goo.gl/5RjN7YVo1yRGKkC78?g_st=ic"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-white underline decoration-white/40 underline-offset-4 transition-colors hover:text-brand-gold"
+            className="inline-flex items-center gap-1.5 text-sm font-medium text-white underline decoration-white/40 underline-offset-4 transition-colors hover:text-brand-gold"
           >
             📍 Katnich Pawquest — ดูตำแหน่งบนแผนที่
           </a>
