@@ -10,21 +10,42 @@ const socials = [
   { label: "YouTube", href: "https://youtube.com/@katnich.pawquest" },
 ];
 
-const features = [
+const questCategories = [
   {
-    icon: "📋",
-    title: "ภารกิจประจำวัน",
-    desc: "ให้อาหาร พาเดินเล่น แปรงขน แปลงกิจวัตรเลี้ยงสัตว์ให้กลายเป็นภารกิจน่าเล่นทุกวัน",
+    tag: "Basic",
+    title: "หมวดพื้นฐาน",
+    quests: [
+      { name: "SEARCH Quest", desc: "หาสิ่งที่ชอบสุด" },
+      { name: "It's yer choice Quest", desc: "เธอมีสิทธิ์เลือกทำ" },
+      { name: "HAND TERGET Quest", desc: "แตะที่มือฉัน" },
+      { name: "COLLAR GRAB Quest", desc: "ขอจับตัวน่อย" },
+      { name: "HOT ZONE Quest", desc: "พื้นที่รัก" },
+      { name: "RECALL Quest", desc: "ชื่อของฉัน" },
+      { name: "Calm Quest", desc: "ฝึกความสงบ" },
+    ],
   },
   {
-    icon: "⭐",
-    title: "สะสมแต้ม เลเวลอัพ",
-    desc: "ทำภารกิจครบรับ XP ปลดล็อกเลเวลใหม่ให้น้องหมาน้องแมวของคุณ",
+    tag: "J-Walking",
+    title: "หมวดเดินดีในสายจูง",
+    quests: [
+      { name: "Beside Me Quest", desc: "มาอยู่ใกล้ๆฉัน" },
+      { name: "Close Side Quest", desc: "สร้างตำแหน่งข้างตัว" },
+      { name: "Choose Me Quest", desc: "เลือกฉัน" },
+      { name: "Go Together Quest", desc: "เดินไปด้วยกัน" },
+    ],
   },
   {
-    icon: "📊",
-    title: "ติดตามสุขภาพ",
-    desc: "บันทึกน้ำหนัก วัคซีน นัดหมายสัตวแพทย์ ไม่พลาดทุกกำหนดการสำคัญ",
+    tag: "PawQuest Fitness",
+    title: "หมวดออกกำลังกาย",
+    quests: [
+      { name: "Paws Up", desc: "สร้างกล้ามเนื้อขาหลัง" },
+      { name: "Rear Paws Up", desc: "สร้างกล้ามเนื้อขาหน้า" },
+      { name: "Pivot", desc: "สร้างกล้ามเนื้อสะโพก" },
+      { name: "Weight Shift", desc: "ทรงตัวให้ดี" },
+      { name: "Cavaletti Walk", desc: "ยกข้อขา" },
+      { name: "Backing Up", desc: "เดินถอยหลัง" },
+      { name: "Cookie Stretch", desc: "ยืดเหยียด" },
+    ],
   },
 ];
 
@@ -153,28 +174,40 @@ export default function Home() {
           <div className="mx-auto max-w-5xl">
             <div className="mx-auto max-w-xl text-center">
               <h2 className="text-3xl font-bold text-brand-navy sm:text-4xl">
-                เลี้ยงสัตว์ให้เป็นเรื่องสนุก
+                รวมภารกิจในเกม PawQuest
               </h2>
               <p className="mt-3 text-brand-navy/60">
-                ทุกกิจวัตรของน้องสัตว์เลี้ยง กลายเป็นเควสต์ที่เล่นได้ทุกวัน
+                ทุกภารกิจถูกออกแบบเป็นเกม เพื่อฝึกสุนัขผ่านการเล่นที่สนุกและได้ผลจริง
               </p>
             </div>
 
-            <div className="mt-14 grid gap-6 sm:grid-cols-3">
-              {features.map((f) => (
+            <div className="mt-14 flex flex-col gap-6">
+              {questCategories.map((cat) => (
                 <div
-                  key={f.title}
-                  className="rounded-2xl border border-brand-navy/10 bg-white p-6"
+                  key={cat.tag}
+                  className="rounded-2xl border border-brand-navy/10 bg-white p-6 sm:p-8"
                 >
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-gold/30 text-2xl">
-                    {f.icon}
+                  <div className="flex flex-wrap items-center gap-3">
+                    <span className="rounded-full bg-brand-gold px-3 py-1 text-xs font-semibold text-brand-navy">
+                      {cat.tag}
+                    </span>
+                    <h3 className="text-lg font-semibold text-brand-navy">
+                      {cat.title}
+                    </h3>
                   </div>
-                  <h3 className="mt-4 text-lg font-semibold text-brand-navy">
-                    {f.title}
-                  </h3>
-                  <p className="mt-2 text-sm leading-6 text-brand-navy/60">
-                    {f.desc}
-                  </p>
+
+                  <div className="mt-5 grid gap-x-6 gap-y-3 sm:grid-cols-2">
+                    {cat.quests.map((q) => (
+                      <div key={q.name} className="flex items-baseline gap-2">
+                        <span className="font-semibold text-brand-terracotta">
+                          {q.name}
+                        </span>
+                        <span className="text-sm text-brand-navy/60">
+                          — {q.desc}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               ))}
             </div>
