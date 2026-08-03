@@ -77,7 +77,7 @@ export default function Home() {
               🎮 Pet Care, Gamified
             </span>
 
-            <h1 className="text-4xl font-bold leading-tight text-brand-navy sm:text-6xl sm:leading-tight">
+            <h1 className="text-4xl font-bold leading-tight text-brand-terracotta sm:text-6xl sm:leading-tight">
               The PawQuest Method
               <span className="align-super text-xl sm:text-2xl">™</span>
             </h1>
@@ -85,9 +85,7 @@ export default function Home() {
             <p className="text-xl font-semibold leading-relaxed text-brand-navy sm:text-2xl">
               เปลี่ยนทุกเกมให้เป็นบทเรียน
               <br />
-              <span className="text-brand-terracotta">
-                เปลี่ยนทุกบทเรียนให้เป็นความสัมพันธ์
-              </span>
+              เปลี่ยนทุกบทเรียนให้เป็นความสัมพันธ์
             </p>
 
             <p className="max-w-xl text-lg leading-8 text-brand-navy/70">
