@@ -88,11 +88,6 @@ export default function Home() {
               เปลี่ยนทุกบทเรียนให้เป็นความสัมพันธ์
             </p>
 
-            <p className="max-w-xl text-lg leading-8 text-brand-navy/70">
-              แอปเลี้ยงสัตว์แนวเควสต์ บันทึกกิจกรรม สะสมแต้ม
-              เลเวลอัพไปพร้อมน้องหมาน้องแมวของคุณ
-            </p>
-
             <p className="text-sm text-brand-navy/60">
               🐾 สำหรับทาสหมาทาสแมวทุกบ้าน — เริ่มเล่นได้ฟรี
             </p>
@@ -116,7 +111,45 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="features" className="bg-white px-6 py-20 sm:px-10 sm:py-28">
+        <section id="why" className="bg-white px-6 py-20 sm:px-10 sm:py-28">
+          <div className="mx-auto max-w-2xl">
+            <h2 className="text-3xl font-bold text-brand-terracotta sm:text-4xl">
+              ทำไมต้อง PawQuest
+            </h2>
+
+            <p className="mt-6 text-xl font-semibold text-brand-navy">
+              เราเชื่อว่า...
+            </p>
+
+            <p className="mt-4 text-lg leading-8 text-brand-navy/80">
+              สุนัขไม่ได้เรียนรู้ดีที่สุดจากการถูกบังคับ
+              <br />
+              แต่เรียนรู้ดีที่สุดเมื่อเขา
+            </p>
+
+            <div className="mt-5 flex flex-wrap gap-3">
+              {["รู้สึกปลอดภัย", "เข้าใจ", "และสนุกกับการเรียน"].map((word) => (
+                <span
+                  key={word}
+                  className="rounded-full bg-brand-gold/30 px-4 py-1.5 text-base font-semibold text-brand-navy"
+                >
+                  {word}
+                </span>
+              ))}
+            </div>
+
+            <p className="mt-8 text-lg leading-8 text-brand-navy/80">
+              ทุกบทเรียนของเราจึงถูกออกแบบเป็น{" "}
+              <span className="font-semibold text-brand-terracotta">
+                &ldquo;เกม&rdquo;
+              </span>
+              <br />
+              เพื่อให้สุนัขเลือกที่จะร่วมมือด้วยตัวเอง
+            </p>
+          </div>
+        </section>
+
+        <section id="features" className="bg-brand-cream/40 px-6 py-20 sm:px-10 sm:py-28">
           <div className="mx-auto max-w-5xl">
             <div className="mx-auto max-w-xl text-center">
               <h2 className="text-3xl font-bold text-brand-navy sm:text-4xl">
@@ -131,7 +164,7 @@ export default function Home() {
               {features.map((f) => (
                 <div
                   key={f.title}
-                  className="rounded-2xl border border-brand-navy/10 bg-brand-cream/40 p-6"
+                  className="rounded-2xl border border-brand-navy/10 bg-white p-6"
                 >
                   <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-gold/30 text-2xl">
                     {f.icon}
