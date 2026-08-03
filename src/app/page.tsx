@@ -181,29 +181,27 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="mt-14 flex flex-col gap-6">
+            <div className="mt-14 flex flex-col gap-10">
               {questCategories.map((cat) => (
-                <div
-                  key={cat.tag}
-                  className="rounded-2xl border border-brand-navy/10 bg-white p-6 sm:p-8"
-                >
-                  <div className="flex flex-wrap items-center gap-3">
-                    <span className="rounded-full bg-brand-gold px-3 py-1 text-xs font-semibold text-brand-navy">
-                      {cat.tag}
-                    </span>
-                    <h3 className="text-lg font-semibold text-brand-navy">
-                      {cat.title}
-                    </h3>
-                  </div>
+                <div key={cat.tag}>
+                  <h3 className="text-lg font-semibold text-brand-navy">
+                    {cat.title}
+                  </h3>
 
-                  <div className="mt-5 grid gap-x-6 gap-y-3 sm:grid-cols-2">
+                  <div className="mt-4 grid gap-3 sm:grid-cols-2">
                     {cat.quests.map((q) => (
-                      <div key={q.name} className="flex items-baseline gap-2">
+                      <div
+                        key={q.name}
+                        className="flex flex-col gap-1.5 rounded-xl border border-brand-navy/10 bg-white p-4"
+                      >
+                        <span className="w-fit rounded-full bg-brand-gold px-2.5 py-0.5 text-[11px] font-semibold text-brand-navy">
+                          {cat.tag}
+                        </span>
                         <span className="font-semibold text-brand-terracotta">
                           {q.name}
                         </span>
                         <span className="text-sm text-brand-navy/60">
-                          — {q.desc}
+                          {q.desc}
                         </span>
                       </div>
                     ))}
