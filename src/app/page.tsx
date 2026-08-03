@@ -1,13 +1,76 @@
 const LINE_URL = "https://lin.ee/sWym9mQ";
 
+function FacebookIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
+      <path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12Z" />
+    </svg>
+  );
+}
+
+function InstagramIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      className="h-5 w-5"
+    >
+      <rect x="3" y="3" width="18" height="18" rx="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
+function TiktokIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
+      <path d="M16 3h-2.6v11.2a2.9 2.9 0 1 1-2-2.75v-2.7a5.6 5.6 0 1 0 4.6 5.5V9.4a7 7 0 0 0 4 1.3V8.1a4.3 4.3 0 0 1-2.6-1.3A4.3 4.3 0 0 1 16 4.1V3Z" />
+    </svg>
+  );
+}
+
+function YoutubeIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-5 w-5">
+      <rect
+        x="2"
+        y="5"
+        width="20"
+        height="14"
+        rx="4"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+      />
+      <path d="M10 9l5 3-5 3V9Z" fill="currentColor" />
+    </svg>
+  );
+}
+
 const socials = [
-  { label: "Facebook", href: "https://www.facebook.com/katnichpawquest" },
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com/katnichpawquest",
+    icon: <FacebookIcon />,
+  },
   {
     label: "Instagram",
     href: "https://www.instagram.com/katnich.pawquest?igsh=MTdjMDBpb3lzdW4zZw==",
+    icon: <InstagramIcon />,
   },
-  { label: "TikTok", href: "https://www.tiktok.com/@katnichpawquest" },
-  { label: "YouTube", href: "https://youtube.com/@katnich.pawquest" },
+  {
+    label: "TikTok",
+    href: "https://www.tiktok.com/@katnichpawquest",
+    icon: <TiktokIcon />,
+  },
+  {
+    label: "YouTube",
+    href: "https://youtube.com/@katnich.pawquest",
+    icon: <YoutubeIcon />,
+  },
 ];
 
 const questCategories = [
@@ -216,19 +279,38 @@ export default function Home() {
 
         <section
           id="about"
-          className="border-t-4 border-brand-terracotta bg-brand-cream px-6 py-16 text-center sm:px-10"
+          className="bg-brand-navy px-6 py-20 text-center sm:px-10 sm:py-24"
         >
-          <h2 className="text-2xl font-bold text-brand-navy sm:text-3xl">
+          <img
+            src="/logo-full.png"
+            alt="KatNich' PawQuest"
+            className="mx-auto h-28 w-auto sm:h-36"
+          />
+
+          <h2 className="mt-8 text-2xl font-bold text-white sm:text-3xl">
             พร้อมเริ่มภารกิจกับน้องแล้วหรือยัง?
           </h2>
-          <a
-            href={LINE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-6 inline-flex h-12 items-center justify-center gap-2 rounded-full bg-brand-gold px-6 text-base font-semibold text-brand-navy shadow-lg transition-transform hover:scale-105"
-          >
-            💬 แอด LINE ปรึกษาฟรี
-          </a>
+
+          <p className="mt-3 text-white/70">
+            ทักมาปรึกษาได้เลย ไม่มีค่าใช้จ่าย
+          </p>
+
+          <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <a
+              href={LINE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-12 items-center justify-center gap-2 rounded-full bg-brand-gold px-6 text-base font-semibold text-brand-navy shadow-lg transition-transform hover:scale-105"
+            >
+              💬 แอด LINE ปรึกษาฟรี
+            </a>
+            <a
+              href="#features"
+              className="flex h-12 items-center justify-center gap-2 rounded-full border border-white/30 px-6 text-base font-medium text-white transition-colors hover:bg-white/10"
+            >
+              ดูภารกิจทั้งหมด →
+            </a>
+          </div>
         </section>
       </main>
 
@@ -247,9 +329,10 @@ export default function Home() {
                 href={s.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full border border-white/30 px-4 py-1.5 text-sm font-medium transition-colors hover:bg-white/10"
+                aria-label={s.label}
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/30 transition-colors hover:bg-white/10"
               >
-                {s.label}
+                {s.icon}
               </a>
             ))}
           </div>
