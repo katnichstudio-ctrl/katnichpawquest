@@ -54,9 +54,11 @@ export default function Home() {
     <div className="flex flex-1 flex-col bg-brand-cream">
       <header className="sticky top-0 z-20 flex items-center justify-between border-b border-brand-navy/10 bg-white/80 px-6 py-4 backdrop-blur sm:px-10">
         <div className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-terracotta text-lg text-white shadow-sm">
-            🐾
-          </div>
+          <img
+            src="/logo-icon.png"
+            alt="KatNich' PawQuest"
+            className="h-10 w-10 rounded-xl shadow-sm"
+          />
           <span className="text-lg font-semibold text-brand-navy">
             KatNich{" "}
             <span className="underline decoration-brand-gold decoration-4 underline-offset-4">
@@ -232,12 +234,11 @@ export default function Home() {
 
       <footer className="bg-brand-terracotta px-6 py-10 text-white sm:px-10">
         <div className="mx-auto flex max-w-5xl flex-col items-center gap-6 sm:flex-row sm:justify-between">
-          <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/15 text-lg">
-              🐾
-            </div>
-            <span className="text-lg font-semibold">KatNich PawQuest</span>
-          </div>
+          <img
+            src="/logo-full.png"
+            alt="KatNich' PawQuest"
+            className="h-16 w-auto"
+          />
 
           <div className="flex flex-wrap items-center justify-center gap-3">
             {socials.map((s) => (
