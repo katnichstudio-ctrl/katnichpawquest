@@ -325,6 +325,15 @@ export default function Home() {
           <p className="mt-2 text-sm text-white/50">
             พื้นที่อื่นสอบถามเพิ่มเติม
           </p>
+
+          <a
+            href="https://maps.app.goo.gl/5RjN7YVo1yRGKkC78?g_st=ic"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-white underline decoration-white/40 underline-offset-4 transition-colors hover:text-brand-gold"
+          >
+            📍 Katnich Pawquest — ดูตำแหน่งบนแผนที่
+          </a>
         </div>
 
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
