@@ -261,11 +261,7 @@ export default function Home() {
             <div className="mt-14 flex flex-col gap-10">
               {questCategories.map((cat) => (
                 <div key={cat.tag}>
-                  <h3 className="text-lg font-semibold text-brand-navy">
-                    {cat.title}
-                  </h3>
-
-                  <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                  <div className="grid gap-3 sm:grid-cols-2">
                     {cat.quests.map((q) => (
                       <div
                         key={q.name}
