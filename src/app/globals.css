@@ -4,19 +4,23 @@
   --background: #ffffff;
   --foreground: #0b1220;
 
-  --brand-green: #16c79a;
-  --brand-green-dark: #0d9488;
-  --brand-blue: #2563eb;
-  --brand-blue-dark: #1e3a8a;
+  --brand-navy: #17395c;
+  --brand-navy-dark: #0d2438;
+  --brand-gold: #efb758;
+  --brand-terracotta: #c24229;
+  --brand-terracotta-dark: #9c3420;
+  --brand-cream: #e1dcc9;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-brand-green: var(--brand-green);
-  --color-brand-green-dark: var(--brand-green-dark);
-  --color-brand-blue: var(--brand-blue);
-  --color-brand-blue-dark: var(--brand-blue-dark);
+  --color-brand-navy: var(--brand-navy);
+  --color-brand-navy-dark: var(--brand-navy-dark);
+  --color-brand-gold: var(--brand-gold);
+  --color-brand-terracotta: var(--brand-terracotta);
+  --color-brand-terracotta-dark: var(--brand-terracotta-dark);
+  --color-brand-cream: var(--brand-cream);
   --font-sans: var(--font-kanit);
 }
 
