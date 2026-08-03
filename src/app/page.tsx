@@ -289,86 +289,77 @@ export default function Home() {
           </div>
         </section>
 
-        <section
-          id="about"
-          className="bg-brand-navy px-6 py-20 text-center sm:px-10 sm:py-24"
-        >
-          <img
-            src="/logo-full.png"
-            alt="KatNich' PawQuest"
-            className="mx-auto h-28 w-auto sm:h-36"
-          />
-
-          <h2 className="mt-8 text-2xl font-bold text-white sm:text-3xl">
-            พร้อมเริ่มภารกิจกันรึยัง?
-          </h2>
-
-          <p className="mt-3 text-white/70">
-            บริการฝึกสุนัขที่บ้าน ฝากฝึก และเรียนออนไลน์
-          </p>
-
-          <div className="mt-6 flex flex-col items-center gap-1">
-            <p className="font-semibold text-white">📍 ให้บริการโซน</p>
-            {serviceZones.map((z) => (
-              <p key={z.province} className="text-white/70">
-                {z.province}
-                {z.districts.length > 0 && (
-                  <span className="text-white/50">
-                    {" "}
-                    — {z.districts.join(" · ")}
-                  </span>
-                )}
-              </p>
-            ))}
-            <p className="mt-2 text-sm text-white/50">
-              พื้นที่อื่นสอบถามเพิ่มเติม
-            </p>
-          </div>
-
-          <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <a
-              href={LINE_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex h-12 items-center justify-center gap-2 rounded-full bg-brand-gold px-6 text-base font-semibold text-brand-navy shadow-lg transition-transform hover:scale-105"
-            >
-              💬 แอด LINE ปรึกษาฟรี
-            </a>
-            <a
-              href="#features"
-              className="flex h-12 items-center justify-center gap-2 rounded-full border border-white/30 px-6 text-base font-medium text-white transition-colors hover:bg-white/10"
-            >
-              ดูภารกิจทั้งหมด →
-            </a>
-          </div>
-        </section>
       </main>
 
-      <footer className="bg-brand-terracotta px-6 py-10 text-white sm:px-10">
-        <div className="mx-auto flex max-w-5xl flex-col items-center gap-6">
-          <img
-            src="/logo-full.png"
-            alt="KatNich' PawQuest"
-            className="h-16 w-auto"
-          />
+      <footer
+        id="about"
+        className="bg-brand-terracotta px-6 py-20 text-center text-white sm:px-10 sm:py-24"
+      >
+        <img
+          src="/logo-full.png"
+          alt="KatNich' PawQuest"
+          className="mx-auto h-28 w-auto sm:h-36"
+        />
 
-          <div className="flex flex-wrap items-center justify-center gap-3">
-            {socials.map((s) => (
-              <a
-                key={s.label}
-                href={s.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={s.label}
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/30 transition-colors hover:bg-white/10"
-              >
-                {s.icon}
-              </a>
-            ))}
-          </div>
+        <h2 className="mt-8 text-2xl font-bold text-white sm:text-3xl">
+          พร้อมเริ่มภารกิจกันรึยัง?
+        </h2>
+
+        <p className="mt-3 text-white/70">
+          บริการฝึกสุนัขที่บ้าน ฝากฝึก และเรียนออนไลน์
+        </p>
+
+        <div className="mt-6 flex flex-col items-center gap-1">
+          <p className="font-semibold text-white">📍 ให้บริการโซน</p>
+          {serviceZones.map((z) => (
+            <p key={z.province} className="text-white/70">
+              {z.province}
+              {z.districts.length > 0 && (
+                <span className="text-white/50">
+                  {" "}
+                  — {z.districts.join(" · ")}
+                </span>
+              )}
+            </p>
+          ))}
+          <p className="mt-2 text-sm text-white/50">
+            พื้นที่อื่นสอบถามเพิ่มเติม
+          </p>
         </div>
 
-        <p className="mt-8 text-center text-xs text-white/70">
+        <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <a
+            href={LINE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex h-12 items-center justify-center gap-2 rounded-full bg-brand-gold px-6 text-base font-semibold text-brand-navy shadow-lg transition-transform hover:scale-105"
+          >
+            💬 แอด LINE ปรึกษาฟรี
+          </a>
+          <a
+            href="#features"
+            className="flex h-12 items-center justify-center gap-2 rounded-full border border-white/30 px-6 text-base font-medium text-white transition-colors hover:bg-white/10"
+          >
+            ดูภารกิจทั้งหมด →
+          </a>
+        </div>
+
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
+          {socials.map((s) => (
+            <a
+              key={s.label}
+              href={s.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={s.label}
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/30 transition-colors hover:bg-white/10"
+            >
+              {s.icon}
+            </a>
+          ))}
+        </div>
+
+        <p className="mt-8 text-xs text-white/70">
           © {new Date().getFullYear()} KatNich PawQuest
         </p>
       </footer>
