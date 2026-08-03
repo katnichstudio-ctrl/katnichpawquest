@@ -1,5 +1,15 @@
 const LINE_URL = "https://lin.ee/sWym9mQ";
 
+const socials = [
+  { label: "Facebook", href: "https://www.facebook.com/katnichpawquest" },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/katnich.pawquest?igsh=MTdjMDBpb3lzdW4zZw==",
+  },
+  { label: "TikTok", href: "https://www.tiktok.com/@katnichpawquest" },
+  { label: "YouTube", href: "https://youtube.com/@katnich.pawquest" },
+];
+
 const features = [
   {
     icon: "📋",
@@ -153,8 +163,33 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="border-t border-brand-navy/10 bg-brand-cream px-6 py-8 text-center text-sm text-brand-navy/50 sm:px-10">
-        © {new Date().getFullYear()} KatNich PawQuest
+      <footer className="bg-brand-terracotta px-6 py-10 text-white sm:px-10">
+        <div className="mx-auto flex max-w-5xl flex-col items-center gap-6 sm:flex-row sm:justify-between">
+          <div className="flex items-center gap-3">
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/15 text-lg">
+              🐾
+            </div>
+            <span className="text-lg font-semibold">KatNich PawQuest</span>
+          </div>
+
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            {socials.map((s) => (
+              <a
+                key={s.label}
+                href={s.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full border border-white/30 px-4 py-1.5 text-sm font-medium transition-colors hover:bg-white/10"
+              >
+                {s.label}
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <p className="mt-8 text-center text-xs text-white/70">
+          © {new Date().getFullYear()} KatNich PawQuest
+        </p>
       </footer>
     </div>
   );
