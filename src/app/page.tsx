@@ -1,3 +1,5 @@
+import Gallery from "@/components/Gallery";
+
 const LINE_URL = "https://lin.ee/sWym9mQ";
 
 function FacebookIcon() {
@@ -259,6 +261,20 @@ export default function Home() {
               <br />
               เพื่อให้สุนัขเลือกที่จะร่วมมือด้วยตัวเอง
             </p>
+          </div>
+        </section>
+
+        <section className="bg-white px-6 py-16 sm:px-10 sm:py-20">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="text-2xl font-bold text-brand-navy sm:text-3xl">
+              โมเมนต์จากการฝึกจริง
+            </h2>
+            <p className="mt-3 text-brand-navy/60">
+              บรรยากาศการเล่นภารกิจของน้องหมาและครูฝึก
+            </p>
+          </div>
+          <div className="mt-10">
+            <Gallery />
           </div>
         </section>
 
