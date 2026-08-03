@@ -315,7 +315,7 @@ export default function Home() {
       </main>
 
       <footer className="bg-brand-terracotta px-6 py-10 text-white sm:px-10">
-        <div className="mx-auto flex max-w-5xl flex-col items-center gap-6 sm:flex-row sm:justify-between">
+        <div className="mx-auto flex max-w-5xl flex-col items-center gap-6">
           <img
             src="/logo-full.png"
             alt="KatNich' PawQuest"
