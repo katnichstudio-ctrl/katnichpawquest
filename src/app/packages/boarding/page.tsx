@@ -40,25 +40,7 @@ export default function BoardingPage() {
 
       <section className="bg-white px-6 py-16 sm:px-10 sm:py-20">
         <div className="mx-auto max-w-2xl">
-          <div className="rounded-xl border border-brand-terracotta/30 bg-brand-terracotta/5 px-5 py-4">
-            <p className="font-bold text-brand-terracotta">
-              ⚠️ {boarding.limitedSlots.title}
-            </p>
-            <p className="mt-1 text-sm text-brand-navy/70">
-              {boarding.limitedSlots.desc}
-            </p>
-          </div>
-
-          <a
-            href={boarding.location.mapUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-brand-navy underline decoration-brand-navy/30 underline-offset-4 hover:text-brand-terracotta"
-          >
-            📍 {boarding.location.name}
-          </a>
-
-          <p className="mt-8 font-semibold text-brand-navy">
+          <p className="font-semibold text-brand-navy">
             ฝากฝึกแบบ Home-style Training
           </p>
           {boarding.intro.slice(1).map((p) => (
@@ -119,6 +101,24 @@ export default function BoardingPage() {
               <Check key={item}>{item}</Check>
             ))}
           </ul>
+
+          <div className="mt-10 rounded-xl border border-brand-terracotta/30 bg-brand-terracotta/5 px-5 py-4">
+            <p className="font-bold text-brand-terracotta">
+              ⚠️ {boarding.limitedSlots.title}
+            </p>
+            <p className="mt-1 text-sm text-brand-navy/70">
+              {boarding.limitedSlots.desc}
+            </p>
+          </div>
+
+          <a
+            href={boarding.location.mapUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-brand-navy underline decoration-brand-navy/30 underline-offset-4 hover:text-brand-terracotta"
+          >
+            📍 {boarding.location.name}
+          </a>
 
           <BoardingTerms />
 
