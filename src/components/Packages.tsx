@@ -8,7 +8,7 @@ const cards = [
   },
   {
     ...boarding,
-    priceLabel: "สอบถามราคาทาง LINE",
+    priceLabel: `${boarding.price.launch} บาท`,
   },
   {
     ...online,
