@@ -160,6 +160,10 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="pricing" className="bg-brand-navy px-6 py-20 sm:px-10 sm:py-28">
+        <Packages />
+      </section>
+
       <section id="why" className="bg-white px-6 py-20 sm:px-10 sm:py-28">
         <div className="mx-auto max-w-2xl">
           <h2 className="text-3xl font-bold text-brand-terracotta sm:text-4xl">
@@ -196,10 +200,6 @@ export default function Home() {
             เพื่อให้สุนัขเลือกที่จะร่วมมือด้วยตัวเอง
           </p>
         </div>
-      </section>
-
-      <section id="pricing" className="bg-brand-navy px-6 py-20 sm:px-10 sm:py-28">
-        <Packages />
       </section>
     </main>
   );
