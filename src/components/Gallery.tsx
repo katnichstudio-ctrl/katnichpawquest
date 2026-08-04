@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 const images = Array.from(
-  { length: 17 },
+  { length: 13 },
   (_, i) => `/gallery/gallery-${String(i + 1).padStart(2, "0")}.jpg`,
 );
 
