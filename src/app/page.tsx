@@ -2,6 +2,7 @@ import Gallery from "@/components/Gallery";
 import QuestCatalog from "@/components/QuestCatalog";
 import TrainerAbout from "@/components/TrainerAbout";
 import Packages from "@/components/Packages";
+import BlogPreview from "@/components/BlogPreview";
 import { LINE_URL } from "@/lib/constants";
 
 const pastAttemptProblems = [
@@ -200,6 +201,10 @@ export default function Home() {
             เพื่อให้สุนัขเลือกที่จะร่วมมือด้วยตัวเอง
           </p>
         </div>
+      </section>
+
+      <section className="bg-brand-cream px-6 py-20 sm:px-10 sm:py-28">
+        <BlogPreview />
       </section>
     </main>
   );

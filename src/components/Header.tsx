@@ -19,10 +19,13 @@ export default function Header() {
       </Link>
       <nav className="hidden items-center gap-8 text-sm font-medium text-brand-navy/70 sm:flex">
         <Link href="/#features" className="transition-colors hover:text-brand-terracotta">
-          ฟีเจอร์
+          Training
         </Link>
         <Link href="/#pricing" className="transition-colors hover:text-brand-terracotta">
           แพ็กเกจ
+        </Link>
+        <Link href="/blog" className="transition-colors hover:text-brand-terracotta">
+          บทความ
         </Link>
         <Link href="/#about" className="transition-colors hover:text-brand-terracotta">
           เกี่ยวกับ
