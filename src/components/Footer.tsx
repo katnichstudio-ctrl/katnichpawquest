@@ -185,6 +185,12 @@ export default function Footer() {
       <p className="mt-8 text-xs text-white/70">
         © {new Date().getFullYear()} KatNich PawQuest
       </p>
+
+      <img
+        src="/partners/dogbooster-white.png"
+        alt="DogBooster"
+        className="mx-auto mt-4 h-8 w-auto opacity-90"
+      />
     </footer>
   );
 }

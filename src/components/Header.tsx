@@ -10,12 +10,19 @@ export default function Header() {
           alt="KatNich' PawQuest"
           className="h-10 w-10 rounded-xl shadow-sm"
         />
-        <span className="text-lg font-semibold text-brand-navy">
-          KatNich{" "}
-          <span className="underline decoration-brand-gold decoration-4 underline-offset-4">
-            PawQuest
+        <div className="flex flex-col">
+          <span className="text-lg font-semibold text-brand-navy">
+            KatNich{" "}
+            <span className="underline decoration-brand-gold decoration-4 underline-offset-4">
+              PawQuest
+            </span>
           </span>
-        </span>
+          <img
+            src="/partners/dogbooster-navy.png"
+            alt="DogBooster"
+            className="mt-0.5 h-3 w-auto"
+          />
+        </div>
       </Link>
       <nav className="hidden items-center gap-8 text-sm font-medium text-brand-navy/70 sm:flex">
         <Link href="/#features" className="transition-colors hover:text-brand-terracotta">
