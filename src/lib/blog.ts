@@ -210,7 +210,7 @@ export const posts: BlogPost[] = [
     ],
     excerpt:
       "katnichPawQuest ชวนเจ้าของสุนัขทำความเข้าใจมารยาทพาน้องหมาเข้าห้าง ทั้งฝั่งสังคมและสวัสดิภาพของน้องหมา พร้อมหลักพฤติกรรมศาสตร์ที่เข้าใจง่าย",
-    image: "/gallery/gallery-05.jpg",
+    image: "/blog/dog-mall-etiquette-cover.jpg",
     content: [
       {
         type: "p",
