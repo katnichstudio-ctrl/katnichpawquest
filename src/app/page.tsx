@@ -1,4 +1,5 @@
 import Gallery from "@/components/Gallery";
+import QuestCatalog from "@/components/QuestCatalog";
 
 const LINE_URL = "https://lin.ee/sWym9mQ";
 
@@ -122,45 +123,6 @@ const socials = [
     label: "YouTube",
     href: "https://youtube.com/@katnich.pawquest",
     icon: <YoutubeIcon />,
-  },
-];
-
-const questCategories = [
-  {
-    tag: "Basic",
-    title: "หมวดพื้นฐาน",
-    quests: [
-      { name: "SEARCH Quest", desc: "หาสิ่งที่ชอบสุด" },
-      { name: "It's yer choice Quest", desc: "เธอมีสิทธิ์เลือกทำ" },
-      { name: "HAND TERGET Quest", desc: "แตะที่มือฉัน" },
-      { name: "COLLAR GRAB Quest", desc: "ขอจับตัวน่อย" },
-      { name: "HOT ZONE Quest", desc: "พื้นที่รัก" },
-      { name: "RECALL Quest", desc: "ชื่อของฉัน" },
-      { name: "Calm Quest", desc: "ฝึกความสงบ" },
-    ],
-  },
-  {
-    tag: "J-Walking",
-    title: "หมวดเดินดีในสายจูง",
-    quests: [
-      { name: "Beside Me Quest", desc: "มาอยู่ใกล้ๆฉัน" },
-      { name: "Close Side Quest", desc: "สร้างตำแหน่งข้างตัว" },
-      { name: "Choose Me Quest", desc: "เลือกฉัน" },
-      { name: "Go Together Quest", desc: "เดินไปด้วยกัน" },
-    ],
-  },
-  {
-    tag: "PawQuest Fitness",
-    title: "หมวดออกกำลังกาย",
-    quests: [
-      { name: "Paws Up", desc: "สร้างกล้ามเนื้อขาหลัง" },
-      { name: "Rear Paws Up", desc: "สร้างกล้ามเนื้อขาหน้า" },
-      { name: "Pivot", desc: "สร้างกล้ามเนื้อสะโพก" },
-      { name: "Weight Shift", desc: "ทรงตัวให้ดี" },
-      { name: "Cavaletti Walk", desc: "ยกข้อขา" },
-      { name: "Backing Up", desc: "เดินถอยหลัง" },
-      { name: "Cookie Stretch", desc: "ยืดเหยียด" },
-    ],
   },
 ];
 
@@ -297,7 +259,36 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="why" className="bg-brand-cream px-6 py-20 sm:px-10 sm:py-28">
+        <section className="bg-brand-cream px-6 py-16 sm:px-10 sm:py-20">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="text-2xl font-bold text-brand-navy sm:text-3xl">
+              โมเมนต์จากการฝึกจริง
+            </h2>
+            <p className="mt-3 text-brand-navy/60">
+              บรรยากาศการเล่นภารกิจของน้องหมาและครูฝึก
+            </p>
+          </div>
+          <div className="mt-10">
+            <Gallery />
+          </div>
+        </section>
+
+        <section id="features" className="bg-brand-cream/40 px-6 py-20 sm:px-10 sm:py-28">
+          <div className="mx-auto max-w-5xl">
+            <div className="mx-auto max-w-xl text-center">
+              <h2 className="text-3xl font-bold text-brand-navy sm:text-4xl">
+                รวมภารกิจในเกม PawQuest
+              </h2>
+              <p className="mt-3 text-brand-navy/60">
+                ทุกภารกิจถูกออกแบบเป็นเกม เพื่อฝึกสุนัขผ่านการเล่นที่สนุกและได้ผลจริง
+              </p>
+            </div>
+
+            <QuestCatalog />
+          </div>
+        </section>
+
+        <section id="why" className="bg-white px-6 py-20 sm:px-10 sm:py-28">
           <div className="mx-auto max-w-2xl">
             <h2 className="text-3xl font-bold text-brand-terracotta sm:text-4xl">
               ทำไมต้อง PawQuest
@@ -334,59 +325,6 @@ export default function Home() {
             </p>
           </div>
         </section>
-
-        <section className="bg-white px-6 py-16 sm:px-10 sm:py-20">
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-2xl font-bold text-brand-navy sm:text-3xl">
-              โมเมนต์จากการฝึกจริง
-            </h2>
-            <p className="mt-3 text-brand-navy/60">
-              บรรยากาศการเล่นภารกิจของน้องหมาและครูฝึก
-            </p>
-          </div>
-          <div className="mt-10">
-            <Gallery />
-          </div>
-        </section>
-
-        <section id="features" className="bg-brand-cream/40 px-6 py-20 sm:px-10 sm:py-28">
-          <div className="mx-auto max-w-5xl">
-            <div className="mx-auto max-w-xl text-center">
-              <h2 className="text-3xl font-bold text-brand-navy sm:text-4xl">
-                รวมภารกิจในเกม PawQuest
-              </h2>
-              <p className="mt-3 text-brand-navy/60">
-                ทุกภารกิจถูกออกแบบเป็นเกม เพื่อฝึกสุนัขผ่านการเล่นที่สนุกและได้ผลจริง
-              </p>
-            </div>
-
-            <div className="mt-14 flex flex-col gap-10">
-              {questCategories.map((cat) => (
-                <div key={cat.tag}>
-                  <div className="grid gap-3 sm:grid-cols-2">
-                    {cat.quests.map((q) => (
-                      <div
-                        key={q.name}
-                        className="flex flex-col gap-1.5 rounded-xl border border-brand-navy/10 bg-white p-4"
-                      >
-                        <span className="w-fit rounded-full bg-brand-gold px-2.5 py-0.5 text-[11px] font-semibold text-brand-navy">
-                          {cat.tag}
-                        </span>
-                        <span className="font-semibold text-brand-terracotta">
-                          {q.name}
-                        </span>
-                        <span className="text-sm text-brand-navy/60">
-                          {q.desc}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
       </main>
 
       <footer
