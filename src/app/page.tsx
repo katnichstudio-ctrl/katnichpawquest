@@ -79,6 +79,29 @@ function LocationPinIcon() {
   );
 }
 
+const pastAttemptProblems = [
+  {
+    icon: "🧑‍🏫",
+    title: "ลองมาหมดแล้ว",
+    desc: "ฝึกเอง อ่านมาเยอะ ดูคลิปนับไม่ถ้วน",
+  },
+  {
+    icon: "👥",
+    title: "จ้างครูฝึกหลายคน",
+    desc: "หลายสำนัก แต่ละคนก็มีสูตรของตัวเอง",
+  },
+  {
+    icon: "🔁",
+    title: "พฤติกรรมเดิมวนกลับมา",
+    desc: "เหตุการณ์เดิมที่เจอซ้ำแล้วซ้ำเล่า",
+  },
+  {
+    icon: "😮‍💨",
+    title: "เหนื่อยกับการคอยสั่ง",
+    desc: "คอยสั่ง คอยห้าม คอยเตือนอยู่ตลอดเวลา",
+  },
+];
+
 const socials = [
   {
     label: "Facebook",
@@ -226,43 +249,55 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-brand-cream px-6 py-20 sm:px-10 sm:py-28">
-          <div className="mx-auto max-w-2xl">
-            <h2 className="text-3xl font-bold text-brand-navy sm:text-4xl">
-              เคยลองมาหมดแล้วใช่ไหม?
-            </h2>
+        <section className="bg-white px-6 py-20 sm:px-10 sm:py-28">
+          <div className="mx-auto max-w-5xl">
+            <div className="mx-auto max-w-xl text-center">
+              <h2 className="text-3xl font-bold text-brand-navy sm:text-4xl">
+                เคยลองมาหมดแล้วใช่ไหม?
+              </h2>
+              <p className="mt-3 text-brand-navy/60">
+                ลองมาหลายวิธี แต่ปัญหาก็ยังวนกลับมาเดิม
+              </p>
+            </div>
 
-            <p className="mt-6 text-lg leading-8 text-brand-navy/80">
-              ฝึกเอง อ่านมาเยอะ ดูคลิปมานับไม่ถ้วน จ้างครูฝึกมาแล้วหลายคน
-              หลายสำนัก แต่ละคนก็มีสูตรของตัวเอง
-            </p>
+            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {pastAttemptProblems.map((p) => (
+                <div
+                  key={p.title}
+                  className="rounded-2xl border border-brand-navy/10 bg-brand-cream/40 p-5"
+                >
+                  <div className="text-3xl">{p.icon}</div>
+                  <h3 className="mt-3 font-bold text-brand-navy">
+                    {p.title}
+                  </h3>
+                  <p className="mt-1 text-sm text-brand-navy/60">{p.desc}</p>
+                </div>
+              ))}
+            </div>
 
-            <p className="mt-4 text-lg leading-8 text-brand-navy/80">
-              แต่พอเวลาผ่านไป สุนัขก็ยังวนกลับไปทำพฤติกรรมเดิม
-              เหตุการณ์เดิมที่คุณเจอมาซ้ำแล้วซ้ำเล่า คุณต้องคอยสั่ง คอยห้าม
-              คอยเตือนอยู่ตลอด จนความรู้สึกที่เหลืออยู่คือความเหนื่อย
-            </p>
+            <div className="mx-auto mt-6 max-w-3xl rounded-2xl border border-brand-gold/40 bg-brand-gold/10 px-6 py-4 text-center">
+              <p className="font-semibold text-brand-navy">
+                ปัญหาไม่ได้อยู่ที่คุณหรือสุนัข — แต่อยู่ที่วิธีที่ผ่านมาแก้แค่
+                &ldquo;พฤติกรรมที่เห็น&rdquo; ไม่ได้แก้ที่ต้นเหตุ
+              </p>
+            </div>
 
-            <p className="mt-4 text-lg leading-8 text-brand-navy/80">
-              ปัญหาไม่ได้อยู่ที่ตัวคุณหรือตัวสุนัข
-              แต่อยู่ที่วิธีการฝึกที่ผ่านมามักแก้แค่ &ldquo;พฤติกรรมที่เห็น&rdquo;
-              ไม่ได้แก้ที่ต้นเหตุ พอไม่มีใครสั่ง พฤติกรรมเดิมก็กลับมาเหมือนเดิม
-            </p>
+            <div className="mx-auto mt-12 max-w-2xl text-center">
+              <p className="text-xl font-bold text-brand-terracotta">
+                นี่คือจุดที่ PawQuest แตกต่าง
+              </p>
 
-            <p className="mt-8 text-xl font-bold text-brand-terracotta">
-              นี่คือจุดที่ PawQuest แตกต่าง
-            </p>
-
-            <p className="mt-4 text-lg leading-8 text-brand-navy/80">
-              เราไม่ได้สอนให้สุนัข &ldquo;เชื่อฟังตอนมีคุณอยู่&rdquo;
-              แต่สร้างความเข้าใจให้สุนัขเลือกทำเองได้แม้ไม่มีใครสั่ง
-              ด้วยแนวทาง Positive Reinforcement ที่วางรากฐานอย่างเป็นระบบ
-              เพื่อผลลัพธ์ที่ยั่งยืนในระยะยาว ไม่ใช่แค่การกดพฤติกรรมไว้ชั่วคราว
-            </p>
+              <p className="mt-4 text-lg leading-8 text-brand-navy/80">
+                เราไม่ได้สอนให้สุนัข &ldquo;เชื่อฟังตอนมีคุณอยู่&rdquo;
+                แต่สร้างความเข้าใจให้สุนัขเลือกทำเองได้แม้ไม่มีใครสั่ง
+                ด้วยแนวทาง Positive Reinforcement ที่วางรากฐานอย่างเป็นระบบ
+                เพื่อผลลัพธ์ที่ยั่งยืนในระยะยาว ไม่ใช่แค่การกดพฤติกรรมไว้ชั่วคราว
+              </p>
+            </div>
           </div>
         </section>
 
-        <section id="why" className="bg-white px-6 py-20 sm:px-10 sm:py-28">
+        <section id="why" className="bg-brand-cream px-6 py-20 sm:px-10 sm:py-28">
           <div className="mx-auto max-w-2xl">
             <h2 className="text-3xl font-bold text-brand-terracotta sm:text-4xl">
               ทำไมต้อง PawQuest
