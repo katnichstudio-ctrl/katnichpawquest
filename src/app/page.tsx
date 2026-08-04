@@ -1,5 +1,6 @@
 import Gallery from "@/components/Gallery";
 import QuestCatalog from "@/components/QuestCatalog";
+import TrainerAbout from "@/components/TrainerAbout";
 
 const LINE_URL = "https://lin.ee/sWym9mQ";
 
@@ -213,6 +214,12 @@ export default function Home() {
 
         <section className="bg-white px-6 py-20 sm:px-10 sm:py-28">
           <div className="mx-auto max-w-5xl">
+            <TrainerAbout />
+          </div>
+        </section>
+
+        <section className="bg-brand-cream px-6 py-20 sm:px-10 sm:py-28">
+          <div className="mx-auto max-w-5xl">
             <div className="mx-auto max-w-xl text-center">
               <h2 className="text-3xl font-bold text-brand-navy sm:text-4xl">
                 เคยลองมาหมดแล้วใช่ไหม?
@@ -259,7 +266,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-brand-cream px-6 py-16 sm:px-10 sm:py-20">
+        <section className="bg-white px-6 py-16 sm:px-10 sm:py-20">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-2xl font-bold text-brand-navy sm:text-3xl">
               โมเมนต์จากการฝึกจริง
