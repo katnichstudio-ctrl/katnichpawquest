@@ -1,6 +1,7 @@
 import Gallery from "@/components/Gallery";
 import QuestCatalog from "@/components/QuestCatalog";
 import TrainerAbout from "@/components/TrainerAbout";
+import Packages from "@/components/Packages";
 
 const LINE_URL = "https://lin.ee/sWym9mQ";
 
@@ -331,6 +332,10 @@ export default function Home() {
               เพื่อให้สุนัขเลือกที่จะร่วมมือด้วยตัวเอง
             </p>
           </div>
+        </section>
+
+        <section id="pricing" className="bg-brand-navy px-6 py-20 sm:px-10 sm:py-28">
+          <Packages />
         </section>
       </main>
 
