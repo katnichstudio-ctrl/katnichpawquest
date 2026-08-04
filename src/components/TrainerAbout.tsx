@@ -8,8 +8,8 @@ const roles = [
 ];
 
 const trainings = [
-  "J-walking โดย Susan Garrett",
   "DogBooster Certified Professional Dog Trainer",
+  "J-walking โดย Susan Garrett",
   "CPR & First Aid Workshop",
 ];
 
@@ -33,7 +33,7 @@ export default function TrainerAbout() {
 
         <p className="mt-4 text-brand-navy/80">
           <span className="font-bold text-brand-terracotta">แคทนิช</span>{" "}
-          ค่ะ Managing Director &amp; Dog Trainer จาก DogBooster
+          Managing Director &amp; Dog Trainer จาก DogBooster
         </p>
 
         <p className="mt-4 leading-7 text-brand-navy/80">
