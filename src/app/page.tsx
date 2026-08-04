@@ -255,7 +255,7 @@ export default function Home() {
               <h2 className="text-3xl font-bold text-brand-navy sm:text-4xl">
                 เคยลองมาหมดแล้วใช่ไหม?
               </h2>
-              <p className="mt-3 text-brand-navy/60">
+              <p className="mt-3 text-xl font-bold text-brand-navy sm:text-2xl">
                 ลองมาหลายวิธี แต่ปัญหาก็ยังวนกลับมาเดิม
               </p>
             </div>
