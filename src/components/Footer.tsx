@@ -81,7 +81,7 @@ const serviceZones = [
 const socials = [
   {
     label: "Facebook",
-    href: "https://www.facebook.com/katnichdogsquest",
+    href: "https://www.facebook.com/katnichpawquest",
     icon: <FacebookIcon />,
   },
   {
@@ -91,12 +91,12 @@ const socials = [
   },
   {
     label: "TikTok",
-    href: "https://www.tiktok.com/@katnichdogsquest",
+    href: "https://www.tiktok.com/@katnichpawquest",
     icon: <TiktokIcon />,
   },
   {
     label: "YouTube",
-    href: "https://youtube.com/@katnich.dogsquest",
+    href: "https://youtube.com/@katnich.pawquest",
     icon: <YoutubeIcon />,
   },
 ];
