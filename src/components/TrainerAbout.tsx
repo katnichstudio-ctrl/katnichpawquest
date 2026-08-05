@@ -28,7 +28,7 @@ export default function TrainerAbout() {
         <h2 className="text-3xl font-bold text-brand-navy sm:text-4xl">
           สวัสดีค่ะ เราคือ
           <br />
-          Katnich&apos; PawQuest
+          Katnich&apos; DogsQuest
         </h2>
 
         <p className="mt-4 text-brand-navy/80">

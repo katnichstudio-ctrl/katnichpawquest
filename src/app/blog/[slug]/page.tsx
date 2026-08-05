@@ -17,7 +17,7 @@ export async function generateMetadata({
   const post = posts.find((p) => p.slug === slug);
   if (!post) return {};
 
-  const seoTitle = post.seoTitle ?? `${post.title} | PawQuest`;
+  const seoTitle = post.seoTitle ?? `${post.title} | DogsQuest`;
 
   return {
     title: seoTitle,
@@ -54,7 +54,7 @@ export default async function BlogPostPage({
     description: post.metaDescription,
     image: [post.image],
     author: { "@type": "Person", name: "ครูแคทนิช" },
-    publisher: { "@type": "Organization", name: "PawQuest" },
+    publisher: { "@type": "Organization", name: "DogsQuest" },
   };
 
   const faqJsonLd = post.faq.length

@@ -27,7 +27,7 @@ const questCategories = [
     ],
   },
   {
-    tag: "PawQuest Fitness",
+    tag: "DogsQuest Fitness",
     title: "หมวดออกกำลังกาย",
     quests: [
       { name: "Paws Up", desc: "สร้างกล้ามเนื้อขาหลัง" },

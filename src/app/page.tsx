@@ -47,7 +47,7 @@ export default function Home() {
           </span>
 
           <h1 className="text-4xl font-bold leading-tight text-brand-terracotta sm:text-6xl sm:leading-tight">
-            The PawQuest Method
+            The DogsQuest Method
             <span className="align-super text-xl sm:text-2xl">™</span>
           </h1>
 
@@ -113,7 +113,7 @@ export default function Home() {
 
           <div className="mx-auto mt-12 max-w-2xl text-center">
             <p className="text-xl font-bold text-brand-terracotta">
-              นี่คือจุดที่ PawQuest แตกต่าง
+              นี่คือจุดที่ DogsQuest แตกต่าง
             </p>
 
             <p className="mt-4 text-lg leading-8 text-brand-navy/80">
@@ -150,7 +150,7 @@ export default function Home() {
         <div className="mx-auto max-w-5xl">
           <div className="mx-auto max-w-xl text-center">
             <h2 className="text-3xl font-bold text-brand-navy sm:text-4xl">
-              รวมภารกิจในเกม PawQuest
+              รวมภารกิจในเกม DogsQuest
             </h2>
             <p className="mt-3 text-brand-navy/60">
               ทุกภารกิจถูกออกแบบเป็นเกม เพื่อฝึกสุนัขผ่านการเล่นที่สนุกและได้ผลจริง
@@ -168,7 +168,7 @@ export default function Home() {
       <section id="why" className="bg-white px-6 py-20 sm:px-10 sm:py-28">
         <div className="mx-auto max-w-2xl">
           <h2 className="text-3xl font-bold text-brand-terracotta sm:text-4xl">
-            ทำไมต้อง PawQuest
+            ทำไมต้อง DogsQuest
           </h2>
 
           <p className="mt-6 text-xl font-semibold text-brand-navy">
