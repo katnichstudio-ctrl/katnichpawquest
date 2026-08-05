@@ -52,9 +52,7 @@ export default function Home() {
           </h1>
 
           <p className="text-xl font-semibold leading-relaxed text-brand-navy sm:text-2xl">
-            เปลี่ยนทุกเกมให้เป็นบทเรียน
-            <br />
-            เปลี่ยนทุกบทเรียนให้เป็นความสัมพันธ์
+            ทุกเกมคือบทเรียนที่สุนัขเลือกเอง
           </p>
 
           <p className="text-sm text-brand-navy/60">
