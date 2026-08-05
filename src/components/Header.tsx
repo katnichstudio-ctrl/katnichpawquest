@@ -15,11 +15,6 @@ export default function Header() {
             DogsQuest
           </span>
         </span>
-        <img
-          src="/partners/dogbooster-navy.png"
-          alt="DogBooster"
-          className="h-4 w-auto"
-        />
       </Link>
       <nav className="hidden items-center gap-8 text-sm font-medium text-brand-navy/70 sm:flex">
         <Link href="/#features" className="transition-colors hover:text-brand-terracotta">
