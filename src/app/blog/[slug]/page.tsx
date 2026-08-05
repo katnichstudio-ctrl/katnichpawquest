@@ -17,19 +17,21 @@ export async function generateMetadata({
   const post = posts.find((p) => p.slug === slug);
   if (!post) return {};
 
+  const seoTitle = post.seoTitle ?? `${post.title} | KatNich PawQuest`;
+
   return {
-    title: `${post.title} | KatNich PawQuest`,
+    title: seoTitle,
     description: post.metaDescription,
     keywords: post.keywords,
     openGraph: {
-      title: post.title,
+      title: seoTitle,
       description: post.metaDescription,
       type: "article",
       images: [post.image],
     },
     twitter: {
       card: "summary_large_image",
-      title: post.title,
+      title: seoTitle,
       description: post.metaDescription,
       images: [post.image],
     },
