@@ -72,12 +72,12 @@ export default function TrainerAbout() {
                 Managing Director &amp; Dog Trainer
               </p>
               <a
-                href="https://www.instagram.com/katnich.pawquest"
+                href="https://www.instagram.com/katnich.dogsquest"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm font-medium text-brand-terracotta underline decoration-brand-terracotta/40 underline-offset-4"
               >
-                IG@katnich.pawquest
+                IG@katnich.dogsquest
               </a>
 
               <ul className="mt-3 space-y-1 text-sm text-brand-navy/70">
