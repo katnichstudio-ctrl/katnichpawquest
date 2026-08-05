@@ -41,7 +41,15 @@ export default function TrainerAbout() {
         <p className="mt-4 leading-7 text-brand-navy/80">
           เลี้ยงและชอบฝึกสุนัขมาตั้งแต่เด็ก และศึกษาการฝึกสุนัขมาเรื่อยๆ
           จุดเปลี่ยนการฝึกแนวทางฝึกจากบังคับมาเป็น Force-Free
-          ได้เป็นลูกศิษย์ครูเข็ม DogBooster
+          ได้เป็นลูกศิษย์ครูเข็ม{" "}
+          <a
+            href="https://dogbooster.net"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-brand-terracotta underline decoration-brand-terracotta/40 underline-offset-4"
+          >
+            DogBooster
+          </a>{" "}
           ลองศึกษาและทำตามรู้สึกว่าได้ผลจริงและไม่ต้องใช้อุปกรณ์บังคับเขา
           ฝึกมาเรื่อยๆจนสุนัขตัวเอง ต้มมัด (บีเกิ้ล) ที่แสนซนจนหยุดไม่อยู่
           เขามีพัฒนาการที่ดีขึ้น สงบกว่าเพื่อนที่อายุเท่ากัน และมีสติมากขึ้น
