@@ -11,7 +11,7 @@ const kanit = Kanit({
 });
 
 export const metadata: Metadata = {
-  title: "KatNich PawQuest | เลี้ยงน้องให้ปังด้วยภารกิจสนุกทุกวัน",
+  title: "PawQuest | เลี้ยงน้องให้ปังด้วยภารกิจสนุกทุกวัน",
   description:
     "แอปเลี้ยงสัตว์แนวเควสต์ บันทึกกิจกรรม สะสมแต้ม เลเวลอัพไปพร้อมน้องหมาน้องแมวของคุณ",
 };

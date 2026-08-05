@@ -5,7 +5,7 @@ import { LINE_URL } from "@/lib/constants";
 import BoardingTerms from "@/components/BoardingTerms";
 
 export const metadata: Metadata = {
-  title: "ฝากฝึก 30 วัน | KatNich PawQuest",
+  title: "ฝากฝึก 30 วัน | PawQuest",
   description: boarding.tagline,
 };
 

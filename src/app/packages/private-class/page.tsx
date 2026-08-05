@@ -4,7 +4,7 @@ import { privateClass } from "@/lib/packages";
 import { LINE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "ฝึกส่วนตัวกับครู | KatNich PawQuest",
+  title: "ฝึกส่วนตัวกับครู | PawQuest",
   description: privateClass.tagline,
 };
 

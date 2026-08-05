@@ -3,8 +3,8 @@ import Link from "next/link";
 import { posts } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "บทความความรู้ฝึกหมา | KatNich PawQuest",
-  description: "รวมบทความความรู้ฝึกสุนัขจาก KatNich PawQuest",
+  title: "บทความความรู้ฝึกหมา | PawQuest",
+  description: "รวมบทความความรู้ฝึกสุนัขจาก PawQuest",
 };
 
 export default function BlogPage() {

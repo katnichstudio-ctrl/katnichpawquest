@@ -109,7 +109,7 @@ export default function Footer() {
     >
       <img
         src="/logo-full.png"
-        alt="KatNich' PawQuest"
+        alt="PawQuest"
         className="mx-auto h-28 w-auto sm:h-36"
       />
 
@@ -146,7 +146,7 @@ export default function Footer() {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1.5 text-sm font-medium text-white underline decoration-white/40 underline-offset-4 transition-colors hover:text-brand-gold"
         >
-          📍 Katnich Pawquest — ดูตำแหน่งบนแผนที่
+          📍 PawQuest — ดูตำแหน่งบนแผนที่
         </a>
       </div>
 
@@ -183,7 +183,7 @@ export default function Footer() {
       </div>
 
       <p className="mt-8 text-xs text-white/70">
-        © {new Date().getFullYear()} KatNich PawQuest
+        © {new Date().getFullYear()} PawQuest
       </p>
 
       <img

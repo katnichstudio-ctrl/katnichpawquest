@@ -3,7 +3,7 @@ import Link from "next/link";
 import { online } from "@/lib/packages";
 
 export const metadata: Metadata = {
-  title: "เรียนออนไลน์ | KatNich PawQuest",
+  title: "เรียนออนไลน์ | PawQuest",
   description: online.tagline,
 };
 

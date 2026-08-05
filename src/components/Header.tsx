@@ -7,11 +7,10 @@ export default function Header() {
       <Link href="/" className="flex items-center gap-3">
         <img
           src="/logo-icon.png"
-          alt="KatNich' PawQuest"
+          alt="PawQuest"
           className="h-10 w-10 rounded-xl shadow-sm"
         />
         <span className="text-lg font-semibold text-brand-navy">
-          KatNich{" "}
           <span className="underline decoration-brand-gold decoration-4 underline-offset-4">
             PawQuest
           </span>
