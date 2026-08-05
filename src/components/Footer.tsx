@@ -96,7 +96,7 @@ const socials = [
   },
   {
     label: "YouTube",
-    href: "https://youtube.com/@katnich.pawquest",
+    href: "https://youtube.com/@katnichdogsquest",
     icon: <YoutubeIcon />,
   },
 ];
