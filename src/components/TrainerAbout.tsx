@@ -34,8 +34,7 @@ export default function TrainerAbout() {
         </h2>
 
         <p className="mt-4 text-brand-navy/80">
-          <span className="font-bold text-brand-terracotta">แคทนิช</span>{" "}
-          Managing Director &amp; Dog Trainer จาก DogBooster
+          <span className="font-bold text-brand-terracotta">แคทนิช</span>
         </p>
 
         <p className="mt-4 leading-7 text-brand-navy/80">
@@ -67,9 +66,6 @@ export default function TrainerAbout() {
 
               <p className="mt-3 font-semibold text-brand-navy">
                 ครูแคทนิช · นิชา สุบิน
-              </p>
-              <p className="text-sm text-brand-navy/70">
-                Managing Director &amp; Dog Trainer
               </p>
               <a
                 href="https://www.instagram.com/katnich.dogsquest"
