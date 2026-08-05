@@ -29,6 +29,8 @@ export default function TrainerAbout() {
           สวัสดีค่ะ เราคือ
           <br />
           Katnich&apos; DogsQuest
+          <br />
+          ครูแคทนิช
         </h2>
 
         <p className="mt-4 text-brand-navy/80">
