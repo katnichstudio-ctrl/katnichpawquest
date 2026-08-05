@@ -12,8 +12,7 @@ const kanit = Kanit({
 
 export const metadata: Metadata = {
   title: "DogsQuest | เลี้ยงน้องให้ปังด้วยภารกิจสนุกทุกวัน",
-  description:
-    "แอปเลี้ยงสัตว์แนวเควสต์ บันทึกกิจกรรม สะสมแต้ม เลเวลอัพไปพร้อมน้องหมาน้องแมวของคุณ",
+  description: "ทุกเกมคือบทเรียนที่สุนัขเลือกเอง",
 };
 
 export default function RootLayout({
