@@ -7,12 +7,12 @@ const questCategories = [
     tag: "Basic",
     title: "หมวดพื้นฐาน",
     quests: [
-      { name: "SEARCH Quest", desc: "หาสิ่งที่ชอบสุด" },
+      { name: "Search Quest", desc: "หาสิ่งที่ชอบสุด" },
       { name: "It's yer choice Quest", desc: "เธอมีสิทธิ์เลือกทำ" },
-      { name: "HAND TERGET Quest", desc: "แตะที่มือฉัน" },
-      { name: "COLLAR GRAB Quest", desc: "ขอจับตัวน่อย" },
-      { name: "HOT ZONE Quest", desc: "พื้นที่รัก" },
-      { name: "RECALL Quest", desc: "ชื่อของฉัน" },
+      { name: "Hand Target Quest", desc: "แตะที่มือฉัน" },
+      { name: "Collar Grab Quest", desc: "ขอจับตัวน่อย" },
+      { name: "Hot Zone Quest", desc: "พื้นที่รัก" },
+      { name: "Recall Quest", desc: "ชื่อของฉัน" },
       { name: "Calm Quest", desc: "ฝึกความสงบ" },
     ],
   },
@@ -37,6 +37,14 @@ const questCategories = [
       { name: "Cavaletti Walk", desc: "ยกข้อขา" },
       { name: "Backing Up", desc: "เดินถอยหลัง" },
       { name: "Cookie Stretch", desc: "ยืดเหยียด" },
+    ],
+  },
+  {
+    tag: "Other",
+    title: "หมวดอื่นๆ",
+    quests: [
+      { name: "Bring Me Quest", desc: "คาบของมาฉันหน่อย" },
+      { name: "Get It Quest", desc: "ช่วยถือของให้หน่อย" },
     ],
   },
 ];
