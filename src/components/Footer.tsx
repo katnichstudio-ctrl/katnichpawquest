@@ -81,22 +81,22 @@ const serviceZones = [
 const socials = [
   {
     label: "Facebook",
-    href: "https://www.facebook.com/katnichpawquest",
+    href: "https://www.facebook.com/katnichdogsquest",
     icon: <FacebookIcon />,
   },
   {
     label: "Instagram",
-    href: "https://www.instagram.com/katnich.pawquest?igsh=MTdjMDBpb3lzdW4zZw==",
+    href: "https://www.instagram.com/katnich.dogsquest",
     icon: <InstagramIcon />,
   },
   {
     label: "TikTok",
-    href: "https://www.tiktok.com/@katnichpawquest",
+    href: "https://www.tiktok.com/@katnichdogsquest",
     icon: <TiktokIcon />,
   },
   {
     label: "YouTube",
-    href: "https://youtube.com/@katnich.pawquest",
+    href: "https://youtube.com/@katnich.dogsquest",
     icon: <YoutubeIcon />,
   },
 ];
