@@ -59,7 +59,7 @@ export default function TrainerAbout() {
           <>
             <p className="mt-4 leading-7 text-brand-navy/80">
               จึงเข้ามาช่วยประชาสัมพันธ์การฝึกแนวทางใหม่นี้ให้คนรู้จักเป็นวงกว้างมากขึ้น
-              และร่วมเป็นครูฝึกใน DogBooster
+              และร่วมเป็นครูฝึกใน DogBooster และมีสถาบันชื่อ DogsQuest
             </p>
 
             <div className="mt-6 rounded-xl border-l-4 border-brand-gold bg-brand-cream/60 p-5">
