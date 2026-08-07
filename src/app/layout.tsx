@@ -11,7 +11,7 @@ const kanit = Kanit({
 });
 
 export const metadata: Metadata = {
-  title: "DogsQuest | เลี้ยงน้องให้ปังด้วยภารกิจสนุกทุกวัน",
+  title: "DogsQuest | รับฝึกสุนัข ครูฝึกสุนัข Force-free Training",
   description: "ทุกเกมคือบทเรียนที่สุนัขเลือกเอง",
 };
 
