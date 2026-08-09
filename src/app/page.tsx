@@ -2,6 +2,7 @@ import Gallery from "@/components/Gallery";
 import QuestCatalog from "@/components/QuestCatalog";
 import TrainerAbout from "@/components/TrainerAbout";
 import Packages from "@/components/Packages";
+import Reviews from "@/components/Reviews";
 import BlogPreview from "@/components/BlogPreview";
 import { LINE_URL } from "@/lib/constants";
 
@@ -198,6 +199,21 @@ export default function Home() {
             <br />
             เพื่อให้สุนัขเลือกที่จะร่วมมือด้วยตัวเอง
           </p>
+        </div>
+      </section>
+
+      <section className="bg-brand-cream/40 px-6 py-20 sm:px-10 sm:py-28">
+        <div className="mx-auto max-w-5xl">
+          <div className="mx-auto max-w-xl text-center">
+            <h2 className="text-3xl font-bold text-brand-navy sm:text-4xl">
+              รีวิวจากผู้ปกครองน้องหมา
+            </h2>
+            <p className="mt-3 text-brand-navy/60">
+              ความประทับใจจริงจากครอบครัวที่ฝึกน้องหมากับเรา
+            </p>
+          </div>
+
+          <Reviews />
         </div>
       </section>
 
