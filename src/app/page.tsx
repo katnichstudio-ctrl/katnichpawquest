@@ -202,14 +202,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-brand-cream/40 px-6 py-20 sm:px-10 sm:py-28">
+      <section className="bg-white px-6 py-20 sm:px-10 sm:py-28">
         <div className="mx-auto max-w-5xl">
           <div className="mx-auto max-w-xl text-center">
             <h2 className="text-3xl font-bold text-brand-navy sm:text-4xl">
-              รีวิวจากผู้ปกครองน้องหมา
+              รีวิวจากผู้ปกครอง
             </h2>
             <p className="mt-3 text-brand-navy/60">
-              ความประทับใจจริงจากครอบครัวที่ฝึกน้องหมากับเรา
+              ความประทับใจจริงจากครอบครัวที่มาฝึกกับเรา
             </p>
           </div>
 
