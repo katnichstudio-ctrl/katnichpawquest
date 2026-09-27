@@ -71,8 +71,8 @@ export const boarding = {
     mapUrl: "https://maps.app.goo.gl/yXf7fXrg7r9vhMKm9",
   },
   price: {
-    launch: "15,000",
-    normal: "18,000–20,000",
+    launch: "18,000",
+    normal: "20,000",
     unit: "บาท/30 วัน",
   },
   intro: [
