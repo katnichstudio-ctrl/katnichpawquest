@@ -1,10 +1,14 @@
 import Link from "next/link";
-import { privateClass, boarding, online } from "@/lib/packages";
+import { privateClass, privateClassSchool, boarding, online } from "@/lib/packages";
 
 const cards = [
   {
     ...privateClass,
     priceLabel: `${privateClass.price} บาท`,
+  },
+  {
+    ...privateClassSchool,
+    priceLabel: `${privateClassSchool.price.launch} บาท`,
   },
   {
     ...boarding,
@@ -28,7 +32,7 @@ export default function Packages() {
         </p>
       </div>
 
-      <div className="mt-12 grid gap-6 sm:grid-cols-3">
+      <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {cards.map((c) => (
           <div
             key={c.slug}
