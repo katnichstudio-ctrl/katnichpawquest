@@ -1,19 +1,7 @@
 import Link from "next/link";
-import { privateClass, privateClassSchool, boarding, online } from "@/lib/packages";
+import { online } from "@/lib/packages";
 
 const cards = [
-  {
-    ...privateClass,
-    priceLabel: `${privateClass.price} บาท`,
-  },
-  {
-    ...privateClassSchool,
-    priceLabel: `${privateClassSchool.price.launch} บาท`,
-  },
-  {
-    ...boarding,
-    priceLabel: `${boarding.price.launch} บาท`,
-  },
   {
     ...online,
     priceLabel: `ส่วนลด ${online.discountAmount} บาท`,
@@ -32,11 +20,11 @@ export default function Packages() {
         </p>
       </div>
 
-      <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-12 grid gap-6 sm:grid-cols-1">
         {cards.map((c) => (
           <div
             key={c.slug}
-            className="flex flex-col rounded-2xl bg-white p-6"
+            className="mx-auto flex w-full max-w-sm flex-col rounded-2xl bg-white p-6"
           >
             <span className="w-fit rounded-full bg-brand-gold px-3 py-1 text-xs font-semibold text-brand-navy">
               {c.tag}
