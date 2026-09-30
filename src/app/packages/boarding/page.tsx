@@ -123,21 +123,8 @@ export default function BoardingPage() {
           <BoardingTerms />
 
           <div className="mt-10 rounded-2xl bg-brand-cream px-6 py-5">
-            <p className="text-sm font-semibold text-brand-terracotta">
-              🎉 ราคาเปิดตัว
-            </p>
-            <div className="mt-2 flex flex-wrap items-end justify-between gap-4">
-              <div>
-                <p className="text-3xl font-bold text-brand-terracotta">
-                  {boarding.price.launch}{" "}
-                  <span className="text-base font-medium text-brand-navy/60">
-                    บาท
-                  </span>
-                </p>
-                <p className="mt-1 text-sm text-brand-navy/50 line-through">
-                  ราคาปกติ {boarding.price.normal} {boarding.price.unit}
-                </p>
-              </div>
+            <div className="flex flex-wrap items-center justify-between gap-4">
+              <p className="font-semibold text-brand-navy">สนใจคอร์สนี้?</p>
               <a
                 href={LINE_URL}
                 target="_blank"

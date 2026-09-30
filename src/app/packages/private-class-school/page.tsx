@@ -54,17 +54,7 @@ export default function PrivateClassSchoolPage() {
           </ul>
 
           <div className="mt-10 flex flex-wrap items-center justify-between gap-4 rounded-2xl bg-brand-cream px-6 py-5">
-            <div>
-              <p className="text-3xl font-bold text-brand-terracotta">
-                {privateClassSchool.price.launch}{" "}
-                <span className="text-base font-medium text-brand-navy/60">
-                  บาท
-                </span>
-              </p>
-              <p className="mt-1 text-sm text-brand-navy/50 line-through">
-                ราคาปกติ {privateClassSchool.price.normal} บาท
-              </p>
-            </div>
+            <p className="font-semibold text-brand-navy">สนใจคอร์สนี้?</p>
             <a
               href={LINE_URL}
               target="_blank"

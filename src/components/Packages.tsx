@@ -4,15 +4,15 @@ import { privateClass, privateClassSchool, boarding, online } from "@/lib/packag
 const cards = [
   {
     ...privateClass,
-    priceLabel: `${privateClass.price} บาท`,
+    priceLabel: null as string | null,
   },
   {
     ...privateClassSchool,
-    priceLabel: `${privateClassSchool.price.launch} บาท`,
+    priceLabel: null as string | null,
   },
   {
     ...boarding,
-    priceLabel: `${boarding.price.launch} บาท`,
+    priceLabel: null as string | null,
   },
   {
     ...online,
@@ -47,9 +47,11 @@ export default function Packages() {
             <p className="mt-2 flex-1 text-sm text-brand-navy/70">
               {c.tagline}
             </p>
-            <p className="mt-4 font-semibold text-brand-terracotta">
-              {c.priceLabel}
-            </p>
+            {c.priceLabel && (
+              <p className="mt-4 font-semibold text-brand-terracotta">
+                {c.priceLabel}
+              </p>
+            )}
             <Link
               href={`/packages/${c.slug}`}
               className="mt-4 flex h-11 items-center justify-center rounded-full border border-brand-navy/25 px-6 text-sm font-semibold text-brand-navy transition-colors hover:bg-brand-navy/5"
