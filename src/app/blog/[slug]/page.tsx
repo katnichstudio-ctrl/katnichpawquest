@@ -130,6 +130,43 @@ export default async function BlogPostPage({
                 </ul>
               );
             }
+            if (block.type === "table") {
+              return (
+                <div key={i} className="mt-4 overflow-x-auto">
+                  <table className="w-full border-collapse text-sm">
+                    <thead>
+                      <tr className="border-b border-brand-navy/15">
+                        {block.headers.map((h) => (
+                          <th
+                            key={h}
+                            className="px-3 py-2 text-left font-semibold text-brand-navy"
+                          >
+                            {h}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {block.rows.map((row, ri) => (
+                        <tr
+                          key={ri}
+                          className="border-b border-brand-navy/10 align-top"
+                        >
+                          {row.map((cell, ci) => (
+                            <td
+                              key={ci}
+                              className="px-3 py-2 text-brand-navy/70"
+                            >
+                              {cell}
+                            </td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              );
+            }
             return (
               <p key={i} className="mt-3 leading-7 text-brand-navy/70">
                 {block.text}
