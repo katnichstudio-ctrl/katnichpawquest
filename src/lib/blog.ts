@@ -946,7 +946,7 @@ export const posts: BlogPost[] = [
     ],
     excerpt:
       "ลูกหมาฉี่ไม่เป็นที่ไม่ได้ดื้อ ครูแคทเล่า 6 ขั้นตอนฝึกขับถ่ายแบบ Force-Free ตั้งแต่วันแรก จับเวลา ฝึกฉี่บนสายจูง นอนยาวทั้งคืน และสอนคำสั่งให้ฉี่",
-    image: "/gallery/gallery-05.jpg",
+    image: "/blog/puppy-potty-training-cover.jpg",
     content: [
       {
         type: "p",
